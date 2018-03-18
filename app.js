@@ -7,6 +7,22 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/List', function(req, res) {
+  res.send([{
+    name: "name",
+    value: "value"
+  },
+  {
+    name: "name",
+    value: "value"
+  },
+  {
+    name: "name",
+    value: "value"
+  }
+  ]);
+});
+
 app.post('/', function(req, res) {
   res.send({
     "Output": "Hello World!"
